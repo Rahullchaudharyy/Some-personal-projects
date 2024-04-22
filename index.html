@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app-byRahul</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- added -->
+<body id="body">
+    <div id="main">
+        <div id="card">
+            <div id="Select">
+     <select id="City-select-tool" placeholder ="Select the location">
+        <option value="" disabled selected hidden>Select the location</option>
+     </select>
+     <button class="Get-weather">Get Weather</button>
+            </div>
+            <div id="search-baar">
+                <input type="text" placeholder="Enter city name " id="input">
+                <button class="search-button"><i class="ri-search-line"></i></button>
+            </div>
+            <div id="suggestion">
+                <ul id="List-state">
+                    <li class="place-name">Hello</li>
+                </ul>
+            </div>
+            <div id="valid">
+                <h4>Please enter the velid location</h4>
+            </div>
+            <div id="Whole-data">
+
+                <div id="weather">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA..." alt="" id="Weather-pic">
+
+                    <h2 id="Temprature">12°C</h3>
+                        <h3 id="Placename">City name</h4>
+                </div>
+                <div id="Details">
+                    <div id="collumn">
+                        <img src="/Weather app/images/humidity.png" alt="">
+                        <div>
+                            <p id="humidity">
+                                50%
+                            </p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div id="collumn">
+                        <img src="/Weather app/images/wind.png" alt="">
+                        <div>
+                            <p id="wind">
+                                17km/h
+                            </p>
+                            <p>Wind speed</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
